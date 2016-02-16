@@ -32,8 +32,7 @@ $ bundle install
 終わったら以下のコマンドを実行
 
 {% highlight sh %}
-$ jekyll new <foobar>
-$ cd <foobar>
+$ jekyll new .
 $ jekyll serve
 {% endhighlight %}
 

@@ -17,3 +17,5 @@ github_username: shotat
 
 # Build settings
 markdown: kramdown
+
+exclude: ['vendor', 'Gemfile', 'Gemfile.lock']
