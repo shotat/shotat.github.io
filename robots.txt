@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: http://shotat.github.io/sitemap.xml
