@@ -19,3 +19,6 @@ github_username: shotat
 markdown: kramdown
 
 exclude: ['vendor', 'Gemfile', 'Gemfile.lock']
+
+gems:
+  - jekyll-sitemap
