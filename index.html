@@ -4,21 +4,29 @@ keywords: shotat, 圧倒的成長
 ---
 
 <div class="home">
-
-  <h1 class="page-heading">Posts</h1>
-
+  <h1 class="page-heading">POSTS</h1>
   <ul class="post-list">
     {% for post in site.posts %}
       <li>
         <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
         <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+          <a class="post-link" href="{{ post.url }}">{{ post.title }}</a>
         </h2>
+
+        <a href="https://twitter.com/share?text={{ post.title }}&url={{ post.url | prepend: site.url }}" class="twitter-share-button" data-size="default">Tweet</a>
+        <p>{{ post.content }}</p>
       </li>
+      <hr>
     {% endfor %}
   </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
+  <p class="rss-subscribe">subscribe <a href="/feed.xml">via RSS</a></p>
 </div>
+
+<script>
+  !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],
+  p=/^http:/.test(d.location)?'http':'https';
+  if(!d.getElementById(id)){js=d.createElement(s);
+  js.id=id;
+  js.src=p+'://platform.twitter.com/widgets.js';
+  fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
+</script>
