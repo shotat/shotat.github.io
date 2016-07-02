@@ -1,7 +1,12 @@
 ---
-layout: page
+layout: profile
 title: Profile
 permalink: /profile/
 ---
 
-俺は強い。
+
+![avatar](/images/avatar.png)
+
+## shotat
+
+Web Engineer
