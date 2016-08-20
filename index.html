@@ -4,7 +4,6 @@ keywords: shotat, 圧倒的成長
 ---
 
 <div class="home">
-  <h1 class="page-heading">POSTS</h1>
   <ul class="post-list">
     {% for post in site.posts %}
       <li>
@@ -12,11 +11,8 @@ keywords: shotat, 圧倒的成長
         <h2>
           <a class="post-link" href="{{ post.url }}">{{ post.title }}</a>
         </h2>
-
-        <a href="https://twitter.com/share?text={{ post.title }}&url={{ post.url | prepend: site.url }}" class="twitter-share-button" data-size="default">Tweet</a>
-        <p>{{ post.content }}</p>
+        <p>{{ post.description }}</p>
       </li>
-      <hr>
     {% endfor %}
   </ul>
   <p class="rss-subscribe">subscribe <a href="/feed.xml">via RSS</a></p>

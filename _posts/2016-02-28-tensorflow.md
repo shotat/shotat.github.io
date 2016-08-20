@@ -1,6 +1,9 @@
 ---
 layout: post
 title: 深層学習
+tags:
+  - 機械学習
+  - TensorFlow
 ---
 
 ## 深層学習
